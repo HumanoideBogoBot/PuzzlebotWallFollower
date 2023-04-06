@@ -18,6 +18,10 @@ alfa es el angulo de inclinacion y d es la distancia deseada hacia el muro.
 - El abanico del LIDAR va de -pi/2 a pi/2.
 - Los comandos para correr la simulación son: (Estos comandos deben ser corridos en la terminal en la carpeta catkin_ws)
 ```
+catkin_make
+```
+- El cual debe compilar
+```
 source devel/setup.bash
 ```
 ```
