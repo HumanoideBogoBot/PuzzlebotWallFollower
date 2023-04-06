@@ -8,7 +8,7 @@ Este codigo corre un Wall Follower Utilizando el robot Modelo Puzzlebot de Manch
 
 - Seutilizo el siguiente modelo geometrico para obtener el angulo de inclinación de robot cofnrme al muro, como también la distancia perpendicular del robot con el muro: <br>
 
-![alt text](modelo_geomatrico.jpeg)<br>
+![alt text](modelo_geometrico.jpeg)<br>
 
 - Se utilzo el siguiente sistema de control para maneter el robot alineado como también a una distancia deseada al muro:<br>
 
