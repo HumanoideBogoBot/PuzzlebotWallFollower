@@ -1,5 +1,7 @@
 #!/usr/bin/env python 
 #Leonardo Gracida Munoz A01379812
+#Daniel Fuentes Castro A01750425
+#Santiago Ortiz Suzarte A01750402
 import sys
 import numpy as np
 import rospy
@@ -124,7 +126,7 @@ def find_wall_direction(scan):
     #Obtenemos la distancia de la hipotenusa de nuestro triangulo
     a = get_distance_in_sector(scan, np.radians(theta-2), np.radians(theta+2))
     #Obtenemos la idstancia perpendicular del robot con el muro
-    b = get_distance_in_sector(scan, np.radians(88), np.radians(92))
+    b = get_distance_in_sector(scan, np.radians(84), np.radians(90))
     #Obtenemos el angulo de inclinacion del robot conforme al muro
     alpha = np.arctan2((a*np.cos(np.radians(theta))-b),(a*np.sin(np.radians(theta))))
     return alpha
@@ -146,7 +148,7 @@ def get_distance_in_sector(scan, start_angle, end_angle) :
     #Obtenemos el index de angulo final
     end_index = range_index(scan,end_angle)
     #Como en este caso el ultmo index numpy no lo cuenta, en caso de en final estar en el sector negativo lo recorremos para obtener el ultimo valor
-    if (end_angle < 0):
+    if (start_angle < 0):
         start_index += 1
         end_index += 1
     return np.mean(scan.ranges[end_index:start_index])
