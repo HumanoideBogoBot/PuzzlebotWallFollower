@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/leo/mobile-robots-module/ros/catkin_ws/install/setup.sh

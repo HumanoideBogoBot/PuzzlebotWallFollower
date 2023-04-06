@@ -1,0 +1,2 @@
+odometry:puzzlebot_control:puzzlebot_gazebo:puzzlebot_nav2d:puzzlebot_world
+-DCATKIN_DEVEL_PREFIX=/home/leo/mobile-robots-module/ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/leo/mobile-robots-module/ros/catkin_ws/install -G Unix Makefiles

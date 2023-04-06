@@ -1,0 +1,8 @@
+prefix=/home/leo/mobile-robots-module/ros/catkin_ws/devel
+
+Name: puzzlebot_nav2d
+Description: Description of puzzlebot_nav2d
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

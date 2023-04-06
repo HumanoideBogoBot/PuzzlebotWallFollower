@@ -1,0 +1,13 @@
+digraph G {
+"chassis" -> "left_wheel"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 317.552\nOldest transform: 312.592\n"];
+"chassis" -> "camera"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"chassis" -> "hokuyo_link"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "chassis"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"chassis" -> "right_wheel"[label=" Broadcaster: /robot_state_publisher\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 317.552\nOldest transform: 312.592\n"];
+"odom_true" -> "base_link"[label=" Broadcaster: /odometry_true\nAverage rate: 20.208\nBuffer length: 4.899\nMost recent transform: 317.528\nOldest transform: 312.629\n"];
+"map" -> "odom_true"[label=" Broadcaster: /amcl\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 317.554"[ shape=plaintext ] ;
+}->"map";
+}
