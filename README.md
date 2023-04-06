@@ -1,4 +1,5 @@
 # PuzzlebotWallFollower
+Robot Seguidor muro con un LIDAR.
 
 - Leonardo Gracida Munoz A01379812
 - Daniel Fuentes Castro A01750425
